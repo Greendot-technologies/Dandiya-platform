@@ -5,7 +5,12 @@ const bookingRoutes = require("./routes/bookingRoutes");
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://navratridandiya.netlify.app", "http://localhost:5173"],
+    credentials: true,
+  })
+);
 app.use(bodyParser.json());
 app.use("/api", bookingRoutes);
 
