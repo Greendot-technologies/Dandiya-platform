@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import logo2 from "../assets/logo2.jpeg";
-import bgVideo from "../assets/bg.mp4";
+
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ const LandingPage = () => {
       <div className="relative h-screen w-full overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src={bgVideo}
+          src="/bg.mp4"
           autoPlay
           loop
           muted
