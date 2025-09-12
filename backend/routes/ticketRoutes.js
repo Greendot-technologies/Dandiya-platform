@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-// const { generateTicketQR } = require("../controllers/ticketController");
 
 const { generateAndEmailTicket } = require("../controllers/ticketController");
 
